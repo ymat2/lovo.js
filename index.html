@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Population Dynamics Simulation</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/lotka-volterra.js"></script>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <main>
+
+  <div class="param">
+  <div id="x">
+  <label for="x-input">Initial population of prey:</label>
+  <label for="x-min">100</label>
+  <input type="range" id="x-input" min="100" max="1000" step="100" value="300">
+  <label for="x-max">1000</label>
+  </div>
+
+  <div id="y">
+  <label for="y-input">Initial population of predator:</label>
+  <label for="y-min">50</label>
+  <input type="range" id="y-input" min="50" max="500" step="50" value="100">
+  <label for="y-man">500</label>
+  </div>
+
+  <div id="t">
+  <label for="t-input">Simulation duration:</label>
+  <label for="t-min">100</label>
+  <input type="range" id="t-input" min="100" max="1000" step="100" value="300">
+  <label for="x-max">1000</label>
+  </div>
+  </div>
+
+  <button onclick="simulate()">SIMULATE</button>
+
+  <div id="plot"></div>
+  </main>
+</body>
+</html>
